@@ -1,0 +1,5 @@
+hooks:
+  post-start:
+    # Install WordPress after start
+    # - exec: "wp core download --locale=es_ES"
+    # - exec: "rm wp-config.php"

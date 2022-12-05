@@ -1,0 +1,31 @@
+color: true
+# For rewrite structure permalinks
+apache_modules:
+  - mod_rewrite
+# config create:
+#   extra-php: |
+#     /* MEMMORY */
+#     define('WP_MEMORY_LIMIT', '256M');
+#     define('WP_MAX_MEMORY_LIMIT', '512M');
+
+#     /* ENVIRONMENT */
+#     if (getenv("ENVIRONMENT") === "development") {
+#       define( 'WP_ENVIRONMENT_TYPE', 'development' );
+#       define( 'WP_DEBUG', true );
+#       define( 'WP_DEBUG_DISPLAY', true );
+#       define( 'WP_DISABLE_FATAL_ERROR_HANDLER', true );
+#     } else {
+#       define( 'WP_ENVIRONMENT_TYPE', 'production' );
+#       define( 'WP_DEBUG', false );
+#       define( 'WP_DEBUG_DISPLAY', false );
+#       define( 'WP_DISABLE_FATAL_ERROR_HANDLER', false );
+#     }    
+    
+#     /* BACKEND */
+#     define( 'WP_POST_REVISIONS', 10 );
+#     define( 'AUTOSAVE_INTERVAL', 160 ); // Seconds
+#     define( 'DISALLOW_FILE_EDIT', true );
+#     define( 'AUTOMATIC_UPDATER_DISABLED', true );
+
+#     /* SITE */
+#     define( 'WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] );
